@@ -1,0 +1,111 @@
+// Complete seed data — mirrors backend/seed_data.py so the app works fully offline.
+
+export const seedProfiles = {
+  your_brand: {
+    handle: "your_brand",
+    display_name: "Your Brand",
+    niche: "General",
+    followers: 15400,
+    following: 320,
+    total_posts: 248,
+    posts: [
+      { date: "2026-07-01", type: "Reel", captionLength: 120, hashtags: 8, likes: 1200, comments: 45, shares: 30 },
+      { date: "2026-07-03", type: "Image", captionLength: 60, hashtags: 5, likes: 800, comments: 20, shares: 10 },
+      { date: "2026-07-05", type: "Carousel", captionLength: 200, hashtags: 10, likes: 1500, comments: 60, shares: 40 },
+      { date: "2026-07-08", type: "Reel", captionLength: 90, hashtags: 7, likes: 2000, comments: 80, shares: 55 },
+      { date: "2026-07-10", type: "Image", captionLength: 45, hashtags: 4, likes: 600, comments: 15, shares: 8 },
+      { date: "2026-07-13", type: "Carousel", captionLength: 180, hashtags: 9, likes: 1300, comments: 50, shares: 35 },
+      { date: "2026-07-15", type: "Reel", captionLength: 110, hashtags: 8, likes: 2200, comments: 90, shares: 60 },
+      { date: "2026-07-18", type: "Image", captionLength: 55, hashtags: 5, likes: 700, comments: 18, shares: 12 },
+    ],
+  },
+  "urban.threads": {
+    handle: "urban.threads",
+    display_name: "Urban Threads",
+    niche: "Fashion",
+    followers: 22000,
+    following: 410,
+    total_posts: 310,
+    posts: [
+      { date: "2026-07-01", type: "Reel", captionLength: 100, hashtags: 12, likes: 3000, comments: 120, shares: 90 },
+      { date: "2026-07-02", type: "Reel", captionLength: 95, hashtags: 11, likes: 3200, comments: 130, shares: 95 },
+      { date: "2026-07-04", type: "Image", captionLength: 50, hashtags: 6, likes: 1000, comments: 30, shares: 20 },
+      { date: "2026-07-06", type: "Carousel", captionLength: 150, hashtags: 9, likes: 1800, comments: 70, shares: 45 },
+      { date: "2026-07-09", type: "Reel", captionLength: 105, hashtags: 10, likes: 3500, comments: 140, shares: 100 },
+      { date: "2026-07-12", type: "Reel", captionLength: 98, hashtags: 11, likes: 3100, comments: 125, shares: 88 },
+      { date: "2026-07-14", type: "Image", captionLength: 55, hashtags: 5, likes: 900, comments: 25, shares: 15 },
+      { date: "2026-07-17", type: "Carousel", captionLength: 160, hashtags: 10, likes: 2000, comments: 75, shares: 50 },
+    ],
+  },
+  "glow.beautyco": {
+    handle: "glow.beautyco",
+    display_name: "Glow Beauty Co",
+    niche: "Beauty",
+    followers: 31000,
+    following: 280,
+    total_posts: 402,
+    posts: [
+      { date: "2026-07-01", type: "Carousel", captionLength: 220, hashtags: 14, likes: 4200, comments: 210, shares: 130 },
+      { date: "2026-07-03", type: "Reel", captionLength: 130, hashtags: 12, likes: 5000, comments: 260, shares: 175 },
+      { date: "2026-07-05", type: "Image", captionLength: 70, hashtags: 8, likes: 1800, comments: 60, shares: 35 },
+      { date: "2026-07-07", type: "Reel", captionLength: 125, hashtags: 13, likes: 4800, comments: 240, shares: 160 },
+      { date: "2026-07-10", type: "Carousel", captionLength: 210, hashtags: 13, likes: 3900, comments: 190, shares: 120 },
+      { date: "2026-07-13", type: "Reel", captionLength: 140, hashtags: 12, likes: 5200, comments: 270, shares: 180 },
+      { date: "2026-07-16", type: "Image", captionLength: 65, hashtags: 7, likes: 1600, comments: 55, shares: 30 },
+      { date: "2026-07-19", type: "Carousel", captionLength: 200, hashtags: 14, likes: 4000, comments: 200, shares: 125 },
+    ],
+  },
+  "techhive.gadgets": {
+    handle: "techhive.gadgets",
+    display_name: "TechHive Gadgets",
+    niche: "Technology",
+    followers: 18500,
+    following: 190,
+    total_posts: 275,
+    posts: [
+      { date: "2026-07-01", type: "Image", captionLength: 180, hashtags: 6, likes: 900, comments: 40, shares: 60 },
+      { date: "2026-07-04", type: "Carousel", captionLength: 260, hashtags: 8, likes: 1400, comments: 65, shares: 95 },
+      { date: "2026-07-07", type: "Reel", captionLength: 100, hashtags: 7, likes: 1600, comments: 70, shares: 110 },
+      { date: "2026-07-10", type: "Image", captionLength: 190, hashtags: 6, likes: 850, comments: 38, shares: 55 },
+      { date: "2026-07-13", type: "Carousel", captionLength: 270, hashtags: 9, likes: 1500, comments: 68, shares: 100 },
+      { date: "2026-07-16", type: "Reel", captionLength: 105, hashtags: 7, likes: 1750, comments: 75, shares: 120 },
+      { date: "2026-07-19", type: "Image", captionLength: 175, hashtags: 5, likes: 800, comments: 35, shares: 50 },
+      { date: "2026-07-22", type: "Carousel", captionLength: 250, hashtags: 8, likes: 1450, comments: 66, shares: 98 },
+    ],
+  },
+  "brewhouse.cafe": {
+    handle: "brewhouse.cafe",
+    display_name: "Brewhouse Cafe",
+    niche: "Food & Beverage",
+    followers: 9800,
+    following: 540,
+    total_posts: 190,
+    posts: [
+      { date: "2026-07-01", type: "Image", captionLength: 40, hashtags: 6, likes: 500, comments: 25, shares: 10 },
+      { date: "2026-07-03", type: "Reel", captionLength: 85, hashtags: 9, likes: 1400, comments: 65, shares: 40 },
+      { date: "2026-07-06", type: "Carousel", captionLength: 120, hashtags: 7, likes: 800, comments: 35, shares: 18 },
+      { date: "2026-07-09", type: "Image", captionLength: 45, hashtags: 5, likes: 550, comments: 28, shares: 12 },
+      { date: "2026-07-12", type: "Reel", captionLength: 90, hashtags: 9, likes: 1500, comments: 70, shares: 45 },
+      { date: "2026-07-15", type: "Carousel", captionLength: 115, hashtags: 8, likes: 850, comments: 38, shares: 20 },
+      { date: "2026-07-18", type: "Image", captionLength: 42, hashtags: 6, likes: 520, comments: 26, shares: 11 },
+      { date: "2026-07-21", type: "Reel", captionLength: 88, hashtags: 9, likes: 1450, comments: 68, shares: 42 },
+    ],
+  },
+};
+
+// Legacy named exports for backward compatibility
+export const userProfile = {
+  username: seedProfiles.your_brand.handle,
+  followers: seedProfiles.your_brand.followers,
+  following: seedProfiles.your_brand.following,
+  totalPosts: seedProfiles.your_brand.total_posts,
+  posts: seedProfiles.your_brand.posts,
+};
+
+export const competitorProfile = {
+  username: seedProfiles["urban.threads"].handle,
+  followers: seedProfiles["urban.threads"].followers,
+  following: seedProfiles["urban.threads"].following,
+  totalPosts: seedProfiles["urban.threads"].total_posts,
+  posts: seedProfiles["urban.threads"].posts,
+};
