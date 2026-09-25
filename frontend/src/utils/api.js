@@ -9,7 +9,7 @@
 import { seedProfiles } from "../data/mockData";
 
 // ── Groq AI Chat ─────────────────────────────────────────────────────
-const GROQ_API_KEY = "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";
+const GROQ_API_KEY = import.meta.env.VITE_GROQ_API_KEY || "";
 const GROQ_URL = "https://api.groq.com/openai/v1/chat/completions";
 
 export async function chatWithAI(message) {
