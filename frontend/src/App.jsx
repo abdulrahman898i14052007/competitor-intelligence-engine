@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import Splash from "./pages/Splash";
-import Login from "./pages/Login";
-import Welcome from "./pages/Welcome";
-import Platform from "./pages/Platform";
+import Login from "./pages/login";
+import Welcome from "./pages/welcome";
+import Platform from "./pages/platform";
 import ConnectInstagram from "./pages/ConnectInstagram";
 import Dashboard from "./pages/Dashboard";
 import CompetitorInput from "./pages/CompetitorInput";
