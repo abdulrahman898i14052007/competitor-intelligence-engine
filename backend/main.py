@@ -45,7 +45,7 @@ class ChatMessage(BaseModel):
 def chat(payload: ChatMessage):
     try:
         response = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
+            model="llama-3.3-70b-instant",
             messages=[
                 {"role": "system", "content": "You are a social media marketing strategy assistant. Answer briefly and practically in 2-3 sentences."},
                 {"role": "user", "content": payload.message}
