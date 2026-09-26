@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BACKEND_URL = "https://competitor-intelligence-engine1.onrender.com";
+const BACKEND_URL = "https://competitor-intelligence-engine-2.onrender.com";
 
 const api = axios.create({
   baseURL: BACKEND_URL,

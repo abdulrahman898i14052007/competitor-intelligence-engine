@@ -20,7 +20,7 @@ function Dashboard() {
     const igProfile = JSON.parse(localStorage.getItem("igProfile") || "{}");
     const handle = igProfile.igId?.replace("@", "") || "your_brand";
 
-    axios.get(`https://competitor-intelligence-engine1.onrender.com/profile-data/${handle}`)
+    axios.get(`https://competitor-intelligence-engine-2.onrender.com/${handle}`)
       .then((res) => {
         if (res.data.found) {
           setUserProfile({
