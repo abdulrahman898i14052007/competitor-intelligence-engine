@@ -46,12 +46,12 @@ class ChatMessage(BaseModel):
 def chat(payload: ChatMessage):
     try:
         response = client.chat.completions.create(
-    model="mixtral-8x7b-32768",
-    messages=[
-        {"role": "system", "content": "You are a social media marketing strategy assistant. Answer briefly and practically in 2-3 sentences."},
-        {"role": "user", "content": payload.message}
-    ]
-)
+            model="llama-3.3-70b-versatile",
+            messages=[
+                {"role": "system", "content": "You are a social media marketing strategy assistant. Answer briefly and practically in 2-3 sentences."},
+                {"role": "user", "content": payload.message}
+            ]
+        )
         return {"reply": response.choices[0].message.content}
     except Exception as e:
         return {"reply": f"Error: {str(e)}"}
