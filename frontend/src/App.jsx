@@ -1,3 +1,4 @@
+import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Splash from "./pages/Splash";
 import Login from "./pages/login";
