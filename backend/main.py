@@ -5,6 +5,7 @@ from sqlalchemy.orm import Session
 from groq import Groq
 from dotenv import load_dotenv
 import os
+import subprocess
 
 from database import SessionLocal, User, Profile, Competitor
 
@@ -45,7 +46,7 @@ class ChatMessage(BaseModel):
 def chat(payload: ChatMessage):
     try:
         response = client.chat.completions.create(
-            model="llama-3.1-8b-instant",
+            model="llama3-8b-8192",
             messages=[
                 {"role": "system", "content": "You are a social media marketing strategy assistant. Answer briefly and practically in 2-3 sentences."},
                 {"role": "user", "content": payload.message}
@@ -134,3 +135,13 @@ def get_profile_data(handle: str, db: Session = Depends(get_db)):
             } for p in profile_posts
         ],
     }
+
+
+@app.get("/run-seed")
+def run_seed():
+    try:
+        subprocess.run(["python", "seed_data.py"], check=True)
+        return {"status": "success", "message": "Database seeded successfully!"}
+    except Exception as e:
+        return {"status": "error", "message": str(e)}
+    
